@@ -1,0 +1,34 @@
+  .top {
+    border: 1px solid white;
+    grid-area: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .top h1 {
+    border: 1px solid white;
+    margin-top: 0;
+  }
+  
+  .middle {
+    border: 1px solid white;
+    grid-area: middle;
+    display: flex;
+  }
+  
+  .left {
+    border: 1px solid white;
+    flex-basis: 25%;
+  }
+  
+  .right {
+    border: 1px solid white;
+    flex-basis: 75%;
+  }
+  
+  .bottom {
+    border: 1px solid white;
+    grid-area: bottom;
+  }
+  

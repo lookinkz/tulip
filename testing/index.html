@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- LINKS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="stylesheet" href="additional.css" />
+    <link rel="stylesheet" href="main.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>TULIP</title>
+  </head>
+  <body>
+    <div class="container">
+      <button class="openbtn rounded-btn" onclick="openNav()">
+        <img src="images/tulip.png" alt="menu" />
+      </button>
+      <!-- SIDEBAR -->
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+      <!-- MAIN -->
+      <div class="main">
+        <div class="top">
+          <h1>THE MAIN TEXT</h1>
+        </div>
+        <div class="middle">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+        <div class="bottom"></div>
+      </div>
+    <!-- ADDITIONAL -->
+    <div class="additional">
+      <ul>
+        <li data-text="Добавить"><i class="fa-solid fa-plus"></i></li>
+      </ul>
+    </div>
+    <!-- DOCK MENU -->
+    <footer>
+      <li class="circle" data-text="Контрагенты">
+        <i class="fa-solid fa-building-user"></i>
+      </li>
+      <li class="circle" data-text="Договоры">
+        <i class="fa-solid fa-file-signature"></i>
+      </li>
+      <li class="circle" data-text="Объекты">
+        <i class="fa-solid fa-hammer"></i>
+      </li>
+      <li class="circle" data-text="Финансы">
+        <i class="fa-solid fa-money-bill-transfer"></i>
+      </li>
+      <li class="circle" data-text="Материалы">
+        <i class="fa-sharp fa-solid fa-parachute-box"></i>
+      </li>
+    </footer>
+    <script src="sidebar.js"></script>
+  </body>
+</html>

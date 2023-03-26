@@ -1,0 +1,49 @@
+.additional {
+position: fixed;
+top: 20%;
+left: 20px;
+}
+
+.additional ul {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.additional li {
+    position: relative;
+list-style: none;
+margin: 10px 0;
+border-radius: 50%;
+width: 30px;
+height: 30px;
+border: 1px solid #778da9;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3);
+cursor: pointer;
+}
+
+.additional li:hover {
+transform: scale(1.2);
+box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.3);
+}
+
+.additional li:hover::after { /* add a pseudo-element to show the data-text */
+    content: attr(data-text);
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 2px 15px #0d1b2a;
+    font-size: 14px;
+    top: 50%;
+    left: 40px; /* adjust the positioning to the right of the li */
+    transform: translate(0, -50%);
+    white-space: nowrap;
+    color: #e0e1dd;
+    padding: 5px 10px;
+}
