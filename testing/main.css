@@ -1,27 +1,35 @@
   .top {
-    border: 1px solid white;
+    border: 1px solid red;
     grid-area: top;
     display: flex;
     justify-content: center;
     align-items: center;
+    max-height: 15vh;
   }
   
   .top h1 {
-    border: 1px solid white;
-    margin-top: 0;
+    border: 1px solid red;
   }
   
   .middle {
-    border: 1px solid white;
+    border: 1px solid green;
     grid-area: middle;
     display: flex;
+    min-height: 70vh;
   }
   
   .left {
     border: 1px solid white;
+    padding: 5px;
     flex-basis: 25%;
+    flex-direction: column;
   }
   
+  .left .list {
+    min-height: 60vh;
+    overflow-y: scroll;
+  }
+
   .right {
     border: 1px solid white;
     flex-basis: 75%;
